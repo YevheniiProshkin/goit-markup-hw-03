@@ -12,6 +12,26 @@ body {
   background: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 .link {
   text-decoration: none;
 }
@@ -20,10 +40,23 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid blue;
+  display: flex;
+  align-items: center;
+}
+
 /* ----------------------ШАПКА-HEADER----------------- */
 
 .header {
   background: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header-link-main {
   font-family: "Raleway";
@@ -32,6 +65,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--header-link-main-color);
+  display: block;
 }
 
 .header-link-main-studio {
@@ -40,7 +74,16 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: #000000;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -49,6 +92,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  display: block;
+}
+
+.header-list-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-item-contacts:not(:last-child) {
+  margin-right: 50px;
 }
 
 .current {
@@ -90,6 +143,7 @@ body {
 
 .service {
   background-color: #2f303a;
+  height: 600px;
 }
 
 .service-title {
@@ -100,6 +154,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 .service-button {
@@ -116,10 +175,13 @@ body {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  cursor: pointer;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 32px;
 }
-.section-service-button:hover,
-.section-service-button:focus {
+.service-button:hover,
+.service-button:focus {
   background-color: #1972f0;
 }
 
