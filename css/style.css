@@ -153,9 +153,6 @@ img {
 
 .service {
   background-color: #2f303a;
-}
-
-.service .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -200,8 +197,9 @@ img {
 
 /* ----------------------СФЕРА ДЕЯТЕЛЬНОСТИ-ACTIVITY----------------- */
 
-.activity .container {
-  margin-top: 94px;
+.activity {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .activity-list {
@@ -236,17 +234,13 @@ img {
 
 /* ----------------------ЧЕМ ЗАНИМАЮТСЯ-BUSINESS----------------- */
 
-.business .container {
-  margin-top: 94px;
-}
-
-.container-buisness {
-  margin-top: 50px;
-  /* outline: 1px solid black; */
+.business-title {
+  padding-bottom: 50px;
 }
 
 .business-list {
   display: flex;
+  padding-bottom: 94px;
 }
 
 .business-item:not(:last-child) {
@@ -269,13 +263,12 @@ img {
 }
 
 .team .container {
-  margin-top: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .container-team {
-  margin-top: 50px;
+  padding-top: 50px;
   /* outline: 1px solid black; */
 }
 
@@ -294,13 +287,13 @@ img {
   margin-right: 30px;
 }
 
-.team-name {
+.time-nane-position {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
-.team-position {
-  padding-bottom: 30px;
+.team-name {
+  padding-bottom: 10px;
 }
 
 .team-title {
@@ -334,10 +327,7 @@ img {
 
 .footer {
   background-color: #2f303a;
-}
-
-.footer .container {
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
@@ -420,14 +410,10 @@ img {
   overflow: hidden;
 }
 
-/* .container-portfolio-buttons {
-  outline: 1px solid black;
-} */
-
 .portfolio-buttons-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .portfolio-button-item:not(:last-child) {
@@ -443,7 +429,7 @@ img {
   color: #212121;
   background: #f5f4fa;
   border-radius: 4px;
-  cursor: pointer;
+  padding: 6px 22px;
 }
 
 .portfolio-button:hover,
@@ -454,7 +440,7 @@ img {
 
 .container-portfolio {
   /* outline: 1px solid black; */
-  margin-top: 50px;
+  padding-top: 50px;
   padding-bottom: 94px;
 }
 
@@ -480,8 +466,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--all-title-color);
-  margin-top: 20px;
-  margin-left: 24px;
 }
 
 .portfolio-text {
@@ -491,7 +475,8 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--all-text-color);
-  margin-top: 4px;
-  margin-bottom: 20px;
-  margin-left: 24px;
+}
+
+.portfolio-name-projekt {
+  padding: 20px 24px;
 }
