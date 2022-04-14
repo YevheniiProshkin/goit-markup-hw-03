@@ -210,6 +210,9 @@ img {
 
 .activity-item {
   width: 270px;
+}
+
+.activity-item:not(:last-child) {
   margin-right: 30px;
 }
 
