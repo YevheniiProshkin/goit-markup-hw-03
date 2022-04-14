@@ -32,6 +32,12 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .link {
   text-decoration: none;
 }
@@ -45,19 +51,23 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid blue;
-  display: flex;
-  align-items: center;
+  /* outline: 1px solid black; */
 }
 
 /* ----------------------ШАПКА-HEADER----------------- */
 
 .header {
   background: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
+
+.header .container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
 .header-link-main {
   font-family: "Raleway";
   font-weight: 700;
@@ -143,7 +153,11 @@ button {
 
 .service {
   background-color: #2f303a;
-  height: 600px;
+}
+
+.service .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .service-title {
@@ -157,7 +171,6 @@ button {
   max-width: 696px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
   padding-bottom: 30px;
 }
 
@@ -182,10 +195,23 @@ button {
 }
 .service-button:hover,
 .service-button:focus {
-  background-color: #1972f0;
+  background-color: #188ce8;
 }
 
 /* ----------------------СФЕРА ДЕЯТЕЛЬНОСТИ-ACTIVITY----------------- */
+
+.activity .container {
+  margin-top: 94px;
+}
+
+.activity-list {
+  display: flex;
+}
+
+.activity-item {
+  width: 270px;
+  margin-right: 30px;
+}
 
 .activity-title {
   font-weight: 700;
@@ -202,9 +228,27 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--all-text-color);
+  padding-top: 10px;
 }
 
 /* ----------------------ЧЕМ ЗАНИМАЮТСЯ-BUSINESS----------------- */
+
+.business .container {
+  margin-top: 94px;
+}
+
+.container-buisness {
+  margin-top: 50px;
+  /* outline: 1px solid black; */
+}
+
+.business-list {
+  display: flex;
+}
+
+.business-item {
+  margin-right: 30px;
+}
 
 .business-title {
   font-weight: 700;
@@ -219,6 +263,38 @@ button {
 
 .team {
   background-color: #f5f4fa;
+}
+
+.team .container {
+  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container-team {
+  margin-top: 50px;
+  /* outline: 1px solid black; */
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  margin-right: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.team-position {
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -254,6 +330,11 @@ button {
   background-color: #2f303a;
 }
 
+.footer .container {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
 .footer-link-main {
   font-family: "Raleway";
   font-weight: 700;
@@ -272,6 +353,10 @@ button {
   color: #ffffff;
 }
 
+.footer-address {
+  margin-top: 20px;
+}
+
 .footer-link-map {
   font-style: normal;
   font-weight: 400;
@@ -279,6 +364,10 @@ button {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.footer-item {
+  margin-top: 9px;
 }
 
 .footer-link-mail {
@@ -325,6 +414,20 @@ button {
   overflow: hidden;
 }
 
+/* .container-portfolio-buttons {
+  outline: 1px solid black;
+} */
+
+.portfolio-buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+}
+
+.portfolio-button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-button {
   font-weight: 500;
   font-size: 16px;
@@ -343,6 +446,27 @@ button {
   color: #ffffff;
 }
 
+.container-portfolio {
+  /* outline: 1px solid black; */
+  margin-top: 50px;
+  padding-bottom: 94px;
+}
+
+.portfolio-list {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
 .portfolio-title {
   font-style: normal;
   font-weight: 700;
@@ -350,6 +474,8 @@ button {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--all-title-color);
+  margin-top: 20px;
+  margin-left: 24px;
 }
 
 .portfolio-text {
@@ -359,4 +485,7 @@ button {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--all-text-color);
+  margin-top: 4px;
+  margin-bottom: 20px;
+  margin-left: 24px;
 }
