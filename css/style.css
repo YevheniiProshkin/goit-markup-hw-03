@@ -235,7 +235,7 @@ img {
 /* ----------------------ЧЕМ ЗАНИМАЮТСЯ-BUSINESS----------------- */
 
 .business-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .business-list {
@@ -260,9 +260,6 @@ img {
 
 .team {
   background-color: #f5f4fa;
-}
-
-.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -410,10 +407,14 @@ img {
   overflow: hidden;
 }
 
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .portfolio-buttons-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
 }
 
 .portfolio-button-item:not(:last-child) {
@@ -441,7 +442,6 @@ img {
 .container-portfolio {
   /* outline: 1px solid black; */
   padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .portfolio-list {
